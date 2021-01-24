@@ -117,7 +117,11 @@
   }
 
   .logo {
-    height: 1em;
+    height: 2em;
+  }
+
+  .portrait {
+    height: 10em;
   }
 
   @media (max-width: 600px) {
