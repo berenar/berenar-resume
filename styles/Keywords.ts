@@ -1,5 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 
+const small = 400;
+const medium = 655;
+const large = 700
+
 export const KeywordsStyles = createGlobalStyle`
 #root {
   overflow: hidden;
@@ -13,13 +17,13 @@ export const KeywordsStyles = createGlobalStyle`
 }
 
 .transitions-item {
-  overflow: hidden;
+  // overflow: hidden;
   width: 100%;
   color: white;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  font-size: 3em;
+  font-size: 5vw;
   font-weight: 800;
   text-transform: uppercase;
   will-change: transform, opacity, height;
@@ -27,4 +31,5 @@ export const KeywordsStyles = createGlobalStyle`
   /* cursor: pointer; */
   /* line-height: 80px; */
 }
+
 `;

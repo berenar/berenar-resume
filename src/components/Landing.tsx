@@ -3,7 +3,6 @@ import Keywords from "@components/Keywords";
 import Pulse from "react-reveal/Pulse";
 import Zoom from "react-reveal/Zoom";
 
-
 export default function Landing() {
   const [headHover, setheadHover] = useState(false);
   const [githubHover, setgithubHover] = useState(false);
@@ -17,14 +16,14 @@ export default function Landing() {
     );
   }
 
-  const keywordsLeft = ["Junior", "Full", "Stack", "Developer"];
-  const keywordsRight = ["Avid", "Learner", "Open", "Minded"];
+  const keywordsLeft = ["Full", "Stack", "Junior", "Developer"];
+  const keywordsRight = ["Open", "Minded", "Avid", "Learner"];
 
   return (
     <div className="container">
       <main>
         <div className="cover">
-          <Keywords align="right" words={keywordsLeft}></Keywords>
+          {/* <Keywords align="right" words={keywordsLeft}></Keywords> */}
 
           <div className="protagonist">
             <Zoom duration={5000}>
@@ -39,7 +38,7 @@ export default function Landing() {
               </Pulse>
             </Zoom>
           </div>
-          <Keywords align="left" words={keywordsRight}></Keywords>
+          {/* <Keywords align="left" words={keywordsRight}></Keywords> */}
         </div>
 
         <h1 className="title">Hi! My name is Bernat</h1>

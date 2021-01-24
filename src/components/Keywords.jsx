@@ -22,8 +22,20 @@ export default function Keywords({ align, words }) {
     ref.current.push(setTimeout(() => set(words), 2000))
     // ref.current.push(setTimeout(() => set(words.slice(0, -1)), 5000))
     ref.current.push(setTimeout(() => set(words), 8000))
+    ref.current.push(setTimeout(() => set(words), 8000))
   }, [])
 
+
+  // TODO: refactor this...
+  function styl(innerHeight) {
+    const divStyle = { overflow: 'hidden', height: innerHeight }
+    if (align === "right") {
+      divStyle.marginRight = 'auto'
+    } else {
+      divStyle.marginLeft = 'auto'
+    }
+    return divStyle
+  }
   useEffect(() => void reset(), [])
 
   return (
@@ -31,10 +43,10 @@ export default function Keywords({ align, words }) {
       <div>
         {transitions.map(({ item, props: { innerHeight, ...rest }, key }) => (
           <animated.div className="transitions-item" key={key} style={rest} onClick={reset}>
-            <animated.div style={{ overflow: 'hidden', height: innerHeight }}>{item}</animated.div>
+            <animated.div style={styl(align, innerHeight)}>{item}</animated.div>
           </animated.div>
         ))}
       </div>
-    </div>
+    </div >
   )
 }
