@@ -3,7 +3,7 @@ import Head from "next/head";
 export default function Home() {
   return (
     <div className="container">
-      <Head>
+      <head>
         <title>Hi! My name is Bernat</title>
         <link
           rel="shortcut icon"
@@ -16,7 +16,7 @@ export default function Home() {
           href="icon-192x192.png"
         />
         <link rel="apple-touch-icon" href="icon-192x192.png" />
-      </Head>
+      </head>
 
       <main>
         <img
