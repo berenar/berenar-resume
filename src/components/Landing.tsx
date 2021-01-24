@@ -3,6 +3,7 @@ import Keywords from "@components/Keywords";
 import Pulse from "react-reveal/Pulse";
 import Zoom from "react-reveal/Zoom";
 
+
 export default function Landing() {
   const [headHover, setheadHover] = useState(false);
   const [githubHover, setgithubHover] = useState(false);

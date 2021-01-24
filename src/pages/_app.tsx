@@ -1,9 +1,16 @@
-import "@styles/Global.css"
-import "@styles/Landing.css"
-import "@styles/Footer.css"
-import "@styles/Keywords.css"
+import { GlobalStyles } from "@styles/Global";
+import { LandingStyles } from "@styles/Landing";
+import { KeywordsStyles } from "@styles/Keywords";
+import { FooterStyles } from "@styles/Footer";
 
-// This default export is required in a new `pages/_app.js` file.
-export default function Home({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+export default function App({ Component, pageProps }) {
+  return (
+    <>
+      <GlobalStyles />
+      <LandingStyles />
+      <KeywordsStyles />
+      <FooterStyles />
+      <Component {...pageProps} />
+    </>
+  );
 }

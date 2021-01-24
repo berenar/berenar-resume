@@ -1,4 +1,6 @@
+import { createGlobalStyle } from "styled-components";
 
+export const KeywordsStyles = createGlobalStyle`
 #root {
   overflow: hidden;
   margin: 0;
@@ -25,3 +27,4 @@
   /* cursor: pointer; */
   /* line-height: 80px; */
 }
+`;

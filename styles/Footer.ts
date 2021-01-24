@@ -1,3 +1,6 @@
+import { createGlobalStyle } from "styled-components";
+
+export const FooterStyles = createGlobalStyle`
 footer {
   width: 100%;
   height: 100px;
@@ -16,3 +19,4 @@ footer a {
   justify-content: center;
   align-items: center;
 }
+`
