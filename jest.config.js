@@ -1,4 +1,4 @@
-module.exports = {
-  preset: 'ts-jest',
-  testEnvironment: 'node',
-};
+// Jest configuration file
+
+export const preset = 'ts-jest';
+export const testEnvironment = 'node';

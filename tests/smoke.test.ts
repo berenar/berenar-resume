@@ -1,4 +1,4 @@
-import Home from '../pages/index'
+import Home from "@pages/index"
 
 import React from 'react';
 import ReactDOM from 'react-dom';

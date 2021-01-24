@@ -1,0 +1,19 @@
+// Babel configuration file
+
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "@pages": "./src/pages",
+          "@components": "./src/components",
+          "@styles": "./styles/",
+          "@tests": "./test"
+        }
+      }
+    ]
+  ]
+}

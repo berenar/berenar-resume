@@ -1,3 +1,5 @@
+// NextJS configuration file
+
 const path = require('path')
 
 module.exports = {
