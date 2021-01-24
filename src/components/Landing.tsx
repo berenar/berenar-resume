@@ -1,11 +1,11 @@
+import { useState } from "react";
+import Keywords from "@components/Keywords";
 import Pulse from "react-reveal/Pulse";
 import Zoom from "react-reveal/Zoom";
-import { useState } from "react";
 
 export default function Landing() {
   const [headHover, setheadHover] = useState(false);
   const [githubHover, setgithubHover] = useState(false);
-
   function setAndUnset(stateName: string) {
     eval("set" + stateName + "(true)");
     setTimeout(
@@ -15,22 +15,33 @@ export default function Landing() {
       1000
     );
   }
+
+  const keywordsLeft = ["Junior", "Full", "Stack", "Developer"];
+  const keywordsRight = ["Avid", "Learner", "Open", "Minded"];
+
   return (
     <div className="container">
       <main>
-        <Zoom duration={5000}>
-          <Pulse when={headHover}>
-            <img
-              onMouseEnter={() => setAndUnset("headHover")}
-              onClick={() => setAndUnset("headHover")}
-              src="/memoji-portrait.png"
-              alt="Vercel Logo"
-              className="portrait"
-            />
-          </Pulse>
-        </Zoom>
-        <h1 className="title">Hi! My name is Bernat</h1>
+        <div className="cover">
+          <Keywords align="right" words={keywordsLeft}></Keywords>
 
+          <div className="protagonist">
+            <Zoom duration={5000}>
+              <Pulse when={headHover}>
+                <img
+                  onMouseEnter={() => setAndUnset("headHover")}
+                  onClick={() => setAndUnset("headHover")}
+                  src="/memoji-portrait.png"
+                  alt="Vercel Logo"
+                  className="portrait"
+                />
+              </Pulse>
+            </Zoom>
+          </div>
+          <Keywords align="left" words={keywordsRight}></Keywords>
+        </div>
+
+        <h1 className="title">Hi! My name is Bernat</h1>
         <p className="description">
           Also known as
           <Pulse when={githubHover}>
@@ -70,13 +81,13 @@ export default function Landing() {
 }
 
 function githubName(username: string) {
-    return (
-      <code>
-        <a href={`https://github.com/${username}`}>
-          {"<"}
-          <p>{username}</p>
-          {"/>"}
-        </a>
-      </code>
-    );
-  }
+  return (
+    <code>
+      <a href={`https://github.com/${username}`}>
+        {"<"}
+        <p>{username}</p>
+        {"/>"}
+      </a>
+    </code>
+  );
+}

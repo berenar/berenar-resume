@@ -8,6 +8,7 @@
       "@components/*": ["./src/components/*"],
       "@styles/*": ["./styles/*"],
       "@pages/*": ["./src/pages/*"],
+      "@public": ["./public/*"],
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -23,6 +24,6 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/Keywords.jsx"],
   "exclude": ["node_modules"]
 }

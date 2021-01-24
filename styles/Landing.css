@@ -21,9 +21,13 @@ a {
   text-decoration: none;
 }
 
+.cover {
+  display: flex;
+}
+
 .title a {
   color: #0070f3;
-  text-decoration: none;
+  text-decoration: none;;
 }
 
 .title a:hover,
@@ -63,7 +67,7 @@ code p {
   color: #ff005a;
 }
 
-.codeWrapper{
+.codeWrapper {
   display: inline;
   margin-left: 0.5em;
 }
@@ -78,6 +82,7 @@ code p {
 }
 
 .card {
+  min-width: 20em;
   margin: 1rem;
   flex-basis: 45%;
   padding: 1.5rem;
@@ -112,10 +117,14 @@ code p {
   height: 2em;
 }
 
+.protagonist{
+  text-align: center;
+}
 .portrait {
+  text-align: center;
   height: 10em;
   -webkit-filter: drop-shadow(5px 5px 5px #666666);
-  filter: drop-shadow(5px 5px 5px #666666);
+  filter: drop-shadow(5px 5px 5px #666666);;
 }
 
 @media (max-width: 600px) {
