@@ -6,17 +6,16 @@ footer {
   height: 100px;
   border-top: 1px solid #eaeaea;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #4A4545;
 }
 
-footer img {
-  margin-left: 0.5rem;
-}
-
-footer a {
+.contactIcons {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  a {
+    margin: 10px;
+  }
 }
-`
+`;

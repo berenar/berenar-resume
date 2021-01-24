@@ -63,7 +63,7 @@ code {
   background: #36382e;
   color: #f6f7ee;
   border-radius: 5px;
-  padding: 0.75rem;
+  padding: 0.4rem;
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;

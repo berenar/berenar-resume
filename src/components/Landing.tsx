@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Keywords from "@components/Keywords";
 import Pulse from "react-reveal/Pulse";
 import Zoom from "react-reveal/Zoom";
 
@@ -21,9 +20,8 @@ export default function Landing() {
 
   return (
     <div className="container">
-        <h4 className="ribbon">Under development</h4>
+      <h4 className="ribbon">Under development</h4>
       <main>
-
         <div className="cover">
           {/* <Keywords align="right" words={keywordsLeft}></Keywords> */}
 
@@ -45,7 +43,7 @@ export default function Landing() {
 
         <h1 className="title">Hi! My name is Bernat</h1>
         <p className="description">
-          Also known as
+          But they call me
           <Pulse when={githubHover}>
             <div
               className="codeWrapper"
