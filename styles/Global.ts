@@ -11,7 +11,6 @@ body {
     background-color: #FFDEE9;
     background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
   min-width:350px; 
-    
 }
 
 * {

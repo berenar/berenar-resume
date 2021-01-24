@@ -8,6 +8,8 @@ export const LandingStyles = createGlobalStyle`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden; /* required */
+  position: relative; /* required  for demo*/
 }
 
 main {
@@ -17,6 +19,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 
 a {
@@ -26,6 +29,7 @@ a {
 
 .cover {
   display: flex;
+
 }
 
 .title a {

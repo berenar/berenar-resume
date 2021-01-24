@@ -21,7 +21,9 @@ export default function Landing() {
 
   return (
     <div className="container">
+        <h4 className="ribbon">Under development</h4>
       <main>
+
         <div className="cover">
           {/* <Keywords align="right" words={keywordsLeft}></Keywords> */}
 
@@ -63,7 +65,7 @@ export default function Landing() {
 
           <a href="" className="card">
             <h3>Education &rarr;</h3>
-            <p> &#128218; Life is a lesson</p>
+            <p>&#128218; Life is a lesson</p>
           </a>
           <a href="" className="card">
             <h3>Work &rarr;</h3>
