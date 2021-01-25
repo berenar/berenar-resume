@@ -1,6 +1,6 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
-export const FooterStyles = createGlobalStyle`
+const FooterStyles = createGlobalStyle`
 footer {
   width: 100%;
   height: 100px;
@@ -19,3 +19,4 @@ footer {
   }
 }
 `;
+export default FooterStyles;

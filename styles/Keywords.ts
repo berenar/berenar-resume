@@ -1,10 +1,10 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
-const small = 400;
-const medium = 655;
-const large = 700
+// const small = 400;
+// const medium = 655;
+// const large = 700;
 
-export const KeywordsStyles = createGlobalStyle`
+const KeywordsStyles = createGlobalStyle`
 #root {
   overflow: hidden;
   margin: 0;
@@ -33,3 +33,5 @@ export const KeywordsStyles = createGlobalStyle`
 }
 
 `;
+
+export default KeywordsStyles;

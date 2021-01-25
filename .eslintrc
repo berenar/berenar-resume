@@ -5,7 +5,9 @@
   },
   "root": true,
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"],
+  "plugins": [
+    "@typescript-eslint"
+  ],
   "extends": [
     "airbnb",
     "eslint:recommended",
@@ -13,6 +15,20 @@
     "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
-    "react/react-in-jsx-scope": 0
+    "react/react-in-jsx-scope": 0,
+    "react/jsx-filename-extension": [
+      2,
+      {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    ],
+    "semi": 0,
+    "import/no-unresolved": 0,
+    "no-use-before-define": 0
   }
 }

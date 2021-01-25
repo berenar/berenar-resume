@@ -1,4 +1,4 @@
-export default function Headers() {
+export default function Headers(): JSX.Element {
   return (
     <head>
       <title>Bernat</title>
@@ -18,7 +18,7 @@ export default function Headers() {
         name="image"
         property="og:image"
         content="memoji2-blueback-256x256.png"
-      ></meta>
+      />
       <meta
         name="description"
         property="og:description"

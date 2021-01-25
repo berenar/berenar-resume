@@ -1,6 +1,6 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
-export const LandingStyles = createGlobalStyle`
+const LandingStyles = createGlobalStyle`
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -141,3 +141,4 @@ code p {
   }
 }
 `;
+export default LandingStyles;

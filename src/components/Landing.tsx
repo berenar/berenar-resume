@@ -1,22 +1,25 @@
-import { useState } from "react";
-import Pulse from "react-reveal/Pulse";
-import Zoom from "react-reveal/Zoom";
+/* eslint-disable no-eval */
+import { useState } from 'react';
+import Pulse from 'react-reveal/Pulse';
+import Zoom from 'react-reveal/Zoom';
 
-export default function Landing() {
+export default function Landing(): JSX.Element {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [headHover, setheadHover] = useState(false);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [githubHover, setgithubHover] = useState(false);
   function setAndUnset(stateName: string) {
-    eval("set" + stateName + "(true)");
+    eval(`set${stateName}(true)`);
     setTimeout(
-      function () {
-        eval("set" + stateName + "(false)");
-      }.bind(this),
-      1000
+      () => {
+        eval(`set${stateName}(false)`);
+      },
+      1000,
     );
   }
 
-  const keywordsLeft = ["Full", "Stack", "Junior", "Developer"];
-  const keywordsRight = ["Open", "Minded", "Avid", "Learner"];
+  // const keywordsLeft = ['Full', 'Stack', 'Junior', 'Developer'];
+  // const keywordsRight = ['Open', 'Minded', 'Avid', 'Learner'];
 
   return (
     <div className="container">
@@ -28,13 +31,19 @@ export default function Landing() {
           <div className="protagonist">
             <Zoom duration={5000}>
               <Pulse when={headHover}>
-                <img
-                  onMouseEnter={() => setAndUnset("headHover")}
-                  onClick={() => setAndUnset("headHover")}
-                  src="/memoji-portrait.png"
-                  alt="Vercel Logo"
-                  className="portrait"
-                />
+                <div
+                  onMouseEnter={() => setAndUnset('headHover')}
+                  onClick={() => setAndUnset('headHover')}
+                  onKeyPress={() => setAndUnset('headHover')}
+                  role="button"
+                  tabIndex={0}
+                >
+                  <img
+                    src="/memoji-portrait.png"
+                    alt="Vercel Logo"
+                    className="portrait"
+                  />
+                </div>
               </Pulse>
             </Zoom>
           </div>
@@ -47,30 +56,33 @@ export default function Landing() {
           <Pulse when={githubHover}>
             <div
               className="codeWrapper"
-              onMouseEnter={() => setAndUnset("githubHover")}
-              onClick={() => setAndUnset("githubHover")}
+              onMouseEnter={() => setAndUnset('githubHover')}
+              onClick={() => setAndUnset('githubHover')}
+              onKeyPress={() => setAndUnset('githubHover')}
+              role="button"
+              tabIndex={0}
             >
-              {githubName("berenar")}
+              {githubName('berenar')}
             </div>
           </Pulse>
         </p>
 
         <div className="grid">
-          <a href="" className="card">
+          <a href="#a" className="card">
             <h3>About me &rarr;</h3>
             <p>&#127757; Curious and organized</p>
           </a>
 
-          <a href="" className="card">
+          <a href="#a" className="card">
             <h3>Education &rarr;</h3>
             <p>&#128218; Life is a lesson</p>
           </a>
-          <a href="" className="card">
+          <a href="#a" className="card">
             <h3>Work &rarr;</h3>
             <p>&#128119; 3 experiences and couting</p>
           </a>
 
-          <a href="" className="card">
+          <a href="#a" className="card">
             <h3>Skills &rarr;</h3>
             <p>&#128298; Sharp as a knife</p>
           </a>
@@ -84,9 +96,9 @@ function githubName(username: string) {
   return (
     <code>
       <a href={`https://github.com/${username}`}>
-        {"<"}
+        {'<'}
         <p>{username}</p>
-        {"/>"}
+        {'/>'}
       </a>
     </code>
   );
