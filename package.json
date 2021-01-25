@@ -8,10 +8,11 @@
     "start": "next start",
     "test": "jest",
     "export": "next build && next export",
-    "lint": "eslint . --ext .ts,.js,.jsx,.tsx,.json"
+    "lint": "eslint . --fix --ext .ts,.js,.jsx,.tsx,.json"
   },
   "dependencies": {
     "babel-plugin-module-resolver": "^4.1.0",
+    "eslint-config-airbnb": "^18.2.1",
     "next": "^10.0.0",
     "node-sass": "^5.0.0",
     "react": "17.0.1",
