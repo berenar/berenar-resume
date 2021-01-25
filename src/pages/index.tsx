@@ -1,6 +1,6 @@
-import Headers from '@components/Headers';
-import Landing from '@components/Landing';
-import Footer from '@components/Footer';
+import Headers from '@components/Headers'
+import Landing from '@components/Landing'
+import Footer from '@components/Footer'
 
 export default function App(): JSX.Element {
   return (
@@ -9,5 +9,5 @@ export default function App(): JSX.Element {
       <Landing />
       <Footer />
     </>
-  );
+  )
 }

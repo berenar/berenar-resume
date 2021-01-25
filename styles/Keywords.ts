@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
 
 // const small = 400;
 // const medium = 655;
@@ -32,6 +32,6 @@ const KeywordsStyles = createGlobalStyle`
   /* line-height: 80px; */
 }
 
-`;
+`
 
-export default KeywordsStyles;
+export default KeywordsStyles

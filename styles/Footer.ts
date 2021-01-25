@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
 
 const FooterStyles = createGlobalStyle`
 footer {
@@ -18,5 +18,5 @@ footer {
     margin: 10px;
   }
 }
-`;
-export default FooterStyles;
+`
+export default FooterStyles

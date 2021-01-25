@@ -1,6 +1,6 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
 
-const backgroundColor = '#F652A0';
+const backgroundColor = '#F652A0'
 const CornerRibbonStyles = createGlobalStyle`
 .ribbon {
     margin: 0;
@@ -33,5 +33,5 @@ const CornerRibbonStyles = createGlobalStyle`
   .ribbon:after {
     left:100%;
   }
-`;
-export default CornerRibbonStyles;
+`
+export default CornerRibbonStyles

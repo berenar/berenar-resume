@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
 
 const LandingStyles = createGlobalStyle`
 .container {
@@ -140,5 +140,5 @@ code p {
     flex-direction: column;
   }
 }
-`;
-export default LandingStyles;
+`
+export default LandingStyles

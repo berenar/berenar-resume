@@ -1,21 +1,18 @@
 /* eslint-disable no-eval */
-import { useState } from 'react';
-import Pulse from 'react-reveal/Pulse';
-import Zoom from 'react-reveal/Zoom';
+import { useState } from 'react'
+import Pulse from 'react-reveal/Pulse'
+import Zoom from 'react-reveal/Zoom'
 
 export default function Landing(): JSX.Element {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [headHover, setheadHover] = useState(false);
+  const [headHover, setheadHover] = useState(false)
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [githubHover, setgithubHover] = useState(false);
+  const [githubHover, setgithubHover] = useState(false)
   function setAndUnset(stateName: string) {
-    eval(`set${stateName}(true)`);
-    setTimeout(
-      () => {
-        eval(`set${stateName}(false)`);
-      },
-      1000,
-    );
+    eval(`set${stateName}(true)`)
+    setTimeout(() => {
+      eval(`set${stateName}(false)`)
+    }, 1000)
   }
 
   // const keywordsLeft = ['Full', 'Stack', 'Junior', 'Developer'];
@@ -36,8 +33,7 @@ export default function Landing(): JSX.Element {
                   onClick={() => setAndUnset('headHover')}
                   onKeyPress={() => setAndUnset('headHover')}
                   role="button"
-                  tabIndex={0}
-                >
+                  tabIndex={0}>
                   <img
                     src="/memoji-portrait.png"
                     alt="Vercel Logo"
@@ -60,8 +56,7 @@ export default function Landing(): JSX.Element {
               onClick={() => setAndUnset('githubHover')}
               onKeyPress={() => setAndUnset('githubHover')}
               role="button"
-              tabIndex={0}
-            >
+              tabIndex={0}>
               {githubName('berenar')}
             </div>
           </Pulse>
@@ -89,7 +84,7 @@ export default function Landing(): JSX.Element {
         </div>
       </main>
     </div>
-  );
+  )
 }
 
 function githubName(username: string) {
@@ -101,5 +96,5 @@ function githubName(username: string) {
         {'/>'}
       </a>
     </code>
-  );
+  )
 }
