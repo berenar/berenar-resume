@@ -2,7 +2,7 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { IoMailOpen } from "react-icons/io5";
 
 export default function Headers() {
-  const iconSize: string = "2em";
+  const iconSize = "2em";
   return (
     <footer>
       <div className="contactIcons">

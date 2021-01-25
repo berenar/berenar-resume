@@ -1,0 +1,13 @@
+node_modules
+.next
+out
+.gitignore
+jest.config.js
+netlify.toml
+next-env.d.ts
+next.config.js
+package-lock.json
+package.json
+README.md
+tsconfig.json
+yarn.lock
