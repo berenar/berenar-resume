@@ -1,10 +1,11 @@
+import Head from 'next/head'
+/* eslint-disable prettier/prettier */
+/* eslint-disable react/self-closing-comp */
 export default function Headers(): JSX.Element {
   return (
-    <head>
+    <Head>
       <title>Bernat</title>
-
-      {/* Open Graph meta tags for link preview */}
-      <meta property="og:site_name" content="San Roque 2014 Pollos" />
+      <meta property="og:site_name" content="Bernat's personal website" />
       <meta
         property="og:description"
         content="Quick personal web app using ReactJS and NextJS"
@@ -12,17 +13,18 @@ export default function Headers(): JSX.Element {
       <meta
         property="og:image"
         itemProp="image"
-        content="memoji2-blueback-256x256.png"
+        content="screenshot26Jan2021.png"
       />
       <meta
         name="image"
         property="og:image"
-        content="memoji2-blueback-256x256.png"
+        content="screenshot26Jan2021.png"
       />
+      <meta name="image" property="og:image" content="screenshot26Jan2021.png"></meta>
       <meta
         name="description"
         property="og:description"
-        content="Quick personal web app using ReactJS and NextJS"
+        content="Bernat's minimal personal web app using ReactJS and NextJS"
       />
       <meta name="author" content="Bernat Pericàs Serra" />
       <meta property="og:updated_time" content="1440432930" />
@@ -36,6 +38,6 @@ export default function Headers(): JSX.Element {
       <link rel="shortcut icon" type="image/png" href="icon-192x192.png" />
       <link rel="shortcut icon" sizes="192x192" href="icon-192x192.png" />
       <link rel="apple-touch-icon" href="icon-192x192.png" />
-    </head>
+    </Head>
   )
 }
