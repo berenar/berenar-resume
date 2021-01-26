@@ -1,9 +1,8 @@
-import Head from 'next/head'
 /* eslint-disable prettier/prettier */
 /* eslint-disable react/self-closing-comp */
 export default function Headers(): JSX.Element {
   return (
-    <Head>
+    <head>
       <title>Bernat</title>
       <meta property="og:site_name" content="Bernat's personal website" />
       <meta
@@ -38,6 +37,6 @@ export default function Headers(): JSX.Element {
       <link rel="shortcut icon" type="image/png" href="icon-192x192.png" />
       <link rel="shortcut icon" sizes="192x192" href="icon-192x192.png" />
       <link rel="apple-touch-icon" href="icon-192x192.png" />
-    </Head>
+    </head>
   )
 }
